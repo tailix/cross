@@ -1,0 +1,15 @@
+Architectures
+-------------
+
+Architectures should be properly identified. We use the following scheme, but it
+may change in future:
+
+* `x86`
+  * `i386`
+  * `x86_64`
+* `riscv`
+  * `riscv64`
+* `arm` - we need more info, now similar to [Debian](https://www.debian.org/ports/arm/)
+  * `armel`
+  * `armhf`
+  * `arm64`
