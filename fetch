@@ -14,7 +14,6 @@ sha256sum -c 'sha256sums.txt'
 tar -xf "$SRC/binutils-2.37.tar.xz" -C "$SRC"
 tar -xf "$SRC/gcc-11.2.0.tar.xz"    -C "$SRC"
 tar -xf "$SRC/linux-5.4.199.tar.xz" -C "$SRC"
-tar -xf "$SRC/glibc-2.35.tar.xz"    -C "$SRC"
 
 cd "$SRC/gcc-11.2.0"
 ./contrib/download_prerequisites
