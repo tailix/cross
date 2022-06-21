@@ -11,9 +11,10 @@ SRC="$REPO/src"
 wget -nc -i 'wget.txt' -P "$SRC"
 sha256sum -c 'sha256sums.txt'
 
-tar -xf "$SRC/binutils-2.37.tar.xz" -C "$SRC"
-tar -xf "$SRC/gcc-11.2.0.tar.xz"    -C "$SRC"
-tar -xf "$SRC/linux-5.4.199.tar.xz" -C "$SRC"
+tar -xf "$SRC/binutils-2.37.tar.xz"         -C "$SRC"
+tar -xf "$SRC/gcc-11.2.0.tar.xz"            -C "$SRC"
+tar -xf "$SRC/linux-5.4.199.tar.xz"         -C "$SRC"
+tar -xf "$SRC/newlib-4.2.0.20211231.tar.gz" -C "$SRC"
 
 cd "$SRC/gcc-11.2.0"
 ./contrib/download_prerequisites
