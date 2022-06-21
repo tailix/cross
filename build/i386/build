@@ -17,6 +17,9 @@ cd "$REPO/build/$ARCH/binutils"
 make -j"$J"
 make install
 
+cd "$REPO/src/linux-5.4.199"
+make ARCH="$ARCH" INSTALL_HDR_PATH="$ROOT/$TARGET" headers_install
+
 cd "$REPO/build/$ARCH/gcc"
 "$REPO/src/gcc-11.2.0/configure" --target="$TARGET" --prefix="$ROOT" --disable-nls --enable-languages=c,c++ --without-headers
 make -j"$J" all-gcc all-target-libgcc
